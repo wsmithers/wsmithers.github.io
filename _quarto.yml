@@ -9,11 +9,14 @@ website:
       - href: index.qmd
         text: Home
       - projects.qmd
+      - resume.qmd
     tools:
       - icon: github
         href: https://github.com/wsmithers
+      - icon: linkedin
+        href: https://www.linkedin.com/in/willsmithers/
   page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
+    right: "Built with love on the [Central Coast](https://www.slocal.com/)"
     left: "&copy; Copyright 2023, William Smithers"
 
 format:

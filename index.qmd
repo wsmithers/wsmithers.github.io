@@ -1,16 +1,23 @@
 ---
 title: "About Me"
+image: img/IMG_1116.jpg
 about:
   id: me
-  template: broadside
-  image: img/IMG_1116.jpg
+  template: solana
+  image-width: 10em
+  image-shape: rectangle
 ---
 
-:::{#me}
-
-## **About**
+:::{#hero-heading}
 
 ## *Education*
+
+**California Polytechnic State University** | San Luis Obispo, CA
+BS in Business Administration Information Systems | Sept 2022 - June 2024 |
+_**Minors in: Statistics and Mathematics**_
+
+**West Valley College** | Saratoga, CA |
+AA in Mathematics, AA in Economics, AA in Business Administration | Sept 2011 - June 2015
 
 ## *Experience*
 
@@ -18,5 +25,5 @@ about:
 
 :::
 
-Feel free to connect with me!
+Feel free to connect!
 

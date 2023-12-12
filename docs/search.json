@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About Me",
-    "section": "",
-    "text": "California Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Sept 2011 - June 2015\nFeel free to connect!"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "About Me",
-    "section": "",
-    "text": "California Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Sept 2011 - June 2015"
-  },
-  {
     "objectID": "projects.html#project-2",
     "href": "projects.html#project-2",
     "title": "Projects",
@@ -26,5 +12,19 @@
     "title": "Projects",
     "section": "Project 3",
     "text": "Project 3"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hello! So nice to meet you 😁 Do you love Statistics, Data Analytics, and Machine Learning? If so, I’m glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and data automation; especially interested in working within consulting, product, and supply chain areas. On the side, I’m passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.\n\n\nCalifornia Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Sept 2011 - June 2015\nFeel free to connect!"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "About Me",
+    "section": "",
+    "text": "California Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Sept 2011 - June 2015"
   }
 ]

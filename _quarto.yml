@@ -10,13 +10,14 @@ website:
         text: Home
       - projects.qmd
       - resume.qmd
+      - students.qmd
     tools:
       - icon: github
         href: https://github.com/wsmithers
       - icon: linkedin
         href: https://www.linkedin.com/in/willsmithers/
   page-footer:
-    right: "Built with love on the [Central Coast](https://www.slocal.com/)"
+    right: "Built with <3 on the [Central Coast](https://www.slocal.com/)"
     left: "&copy; Copyright 2023, William Smithers"
 
 format:

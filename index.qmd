@@ -8,22 +8,20 @@ about:
   image-shape: rectangle
 ---
 
-:::{#hero-heading}
+::: {#hero-heading}
 
-## *Education*
+Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and *Machine Learning*? If so, I'm glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and data automation; especially interested in working within consulting, product, and supply chain areas. On the side, I'm passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.
 
-**California Polytechnic State University** | San Luis Obispo, CA
-BS in Business Administration Information Systems | Sept 2022 - June 2024 |
-_**Minors in: Statistics and Mathematics**_
+## *Education* 🏫 🔢
 
-**West Valley College** | Saratoga, CA |
-AA in Mathematics, AA in Economics, AA in Business Administration | Sept 2011 - June 2015
+**California Polytechnic State University** \| San Luis Obispo, CA BS in Business Administration Information Systems \| Sept 2022 - June 2024 \| ***Minors in: Statistics and Mathematics***
 
-## *Experience*
+**West Valley College** \| Saratoga, CA \| AA in Mathematics, AA in Economics, AA in Business Administration \| Sept 2011 - June 2015
 
-## *Interests*
+## *Experience* 👨‍💼 🏢
+
+## *Interests* 🚵‍♂️ ☕
 
 :::
 
 Feel free to connect!
-

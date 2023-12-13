@@ -10,7 +10,7 @@ website:
         text: Home
       - projects.qmd
       - resume.qmd
-      - students.qmd
+      - projd1_backup.qmd
     tools:
       - icon: github
         href: https://github.com/wsmithers

@@ -1,0 +1,369 @@
+---
+title: "Project Deliverable - Crime Rates"
+author: "William Smithers"
+format: 
+  html:
+    code-fold: false
+    self-contained: true
+    code-tools: true
+    toc: true
+editor: source
+execute: 
+  error: true
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r setup}
+library(tidyverse)
+library(here)
+library(broom)
+library(english)
+library(kableExtra)
+library(MASS)
+library(lmtest)
+library(car)
+library(patchwork)
+
+data <- here("CrimeRate.csv")
+crime_data <- read.csv(data)
+
+crime_data$County <- str_replace_all(crime_data$County, "_", " ")
+
+```
+
+[A Statistical Analysis on United States Crime Rates: How does San Luis Obispo Fare?]{style="font-size: 2.5em;"}
+
+[By: William J. Smithers (2023)]{.underline}
+
+# **Abstract**
+
+```{r, echo=FALSE}
+image1_url <- "https://fox5sandiego.com/wp-content/uploads/sites/15/2023/11/AdobeStock_112226366-1.jpeg?w=1280&h=720&crop=1"
+knitr::include_graphics(image1_url)
+```
+
+<p>
+
+<span style="font-size: 12px; font-style: italic;">Courtesy of Adobe Stock photo.
+
+<p>
+
+</span>
+
+Analyzing crime rates has been of paramount importance for various stakeholders, including government entities and private sectors. Federal, State, and Local governments rely on crime rate analysis to inform the allocation of social services, tailoring interventions to areas with specific needs. Furthermore, private sectors, notably financial institutions and real estate companies, leverage crime rate metrics to assess business loan risk and make informed decisions about property investments.
+
+This research article delves into a comprehensive data set encompassing key variables such as US County, Crimes Per 100,000 People, Area, Population, Population Age 18-34, Population Age 65+, Physicians, Hospital Beds per 100,000 People, Percentage of Population with HS Diploma, Percentage of Population with Bachelors Degree, Poverty Rate, Unemployment Percentage, Income per Capita (in thousands), and Region. By employing numerous statistical methods, we explore intricate relationships within the collected data to uncover nuanced patterns and trends in crime rates.
+
+How Does San Luis Obispo Fare in regards to other California Counties? This will be a guiding question throughout the article. The analysis in this article will be split into several sections:
+
+1.  US Collective Analysis - (Graphical Comparisons, Predictive Model Analysis, and more)
+
+2.  California Specific Analysis - How does San Luis Obispo County Compare to the Rest of the State?
+
+3.  Conclusions
+
+The data used in this analysis was collected from: [DATA.GOV](https://catalog.data.gov/dataset?tags=crime)
+
+# [Section 1: US Collective Analysis]{style="font-size: 1em;"}
+
+This section of analysis will focus on looking into various statistics and visualizations from the data set.
+
+When analyzing crime data at the national level, it is important to see baseline averages of variables of interest. We were most interested in viewing the collective national averages of Crime per 100K People, Unemployment Rate, High School Graduation Rate, Proportion of People with Bachelors Degrees, and Poverty Rate. Within the given year when this data was collected by DATA.GOV, the average Crime per 100K People was \~57.3. Statistically, this means that in a given year, on average, a US resident living in a hypothetical town with at least 100,000 residents has about a $0.0573\%$ chance of being involved in crime (intentionally or unintentionally).
+
+```{r}
+q1tbl <- crime_data %>%
+  dplyr::select(Region, Unemploy, HSGrad, Bachelors, Poverty, CrimesPer100K) %>%
+  summarise(Average_Crime_Per_100K = mean(CrimesPer100K),
+            Average_Unemployment_Rate = mean(Unemploy),
+            Average_HighSchool_Grad_Rate = mean(HSGrad),
+            Average_Bachelors_Rate = mean(Bachelors),
+            Average_Poverty_Rate = mean(Poverty))
+q1tbl %>%
+  kable(col.names = c("Average Crimes per 100K People", "Average Unemployment Rate", "Average HS Grad Rate", "Average of Population with Bachelors", "Average Poverty Rate")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = FALSE
+  ) %>%
+  row_spec(0, background = 'lightblue')
+
+```
+
+Holistically, while it is important to gather baseline national averages for these metrics, it is important to gather regional statistics from various, selected regions nationwide. The table below provides the same metrics, but broken down into 4 distinct regions: NC (North Central), NE (North East), S (South), W (West). As we can see several regions stand out in regards to Average Poverty Rate. The collective average US Poverty Rate hovers at $8.62\%$, regions like South ($10.57\%$) and North East ($6.52\%$) sit further apart from the collective average than the other US regions. It is additionally important to note that the South and North East regions have Average Crimes per 100K People that are significantly further from the collective average, indicative that there is some underlying relationship between Poverty Rate and Crime.
+
+```{r}
+q1tbl2 <- crime_data %>%
+  dplyr::select(Region, Unemploy, HSGrad, Bachelors, Poverty, CrimesPer100K) %>%
+  group_by(Region) %>%
+  summarise(Average_Crime_Per_100K = mean(CrimesPer100K),
+            Average_Unemployment_Rate = mean(Unemploy),
+            Average_HighSchool_Grad_Rate = mean(HSGrad),
+            Average_Bachelors_Rate = mean(Bachelors),
+            Average_Poverty_Rate = mean(Poverty))
+q1tbl2 %>%
+  kable(col.names = c("Region", "Average Crimes per 100K People", "Average Unemployment Rate", "Average HS Grad Rate", "Average of Population with Bachelors", "Average Poverty Rate")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = FALSE
+  ) %>%
+  row_spec(0, background = 'darkblue', color = 'white')
+```
+
+Diving deeper into the analysis of the four regions, it was pertinent to derive crime metrics of the top 4 counties with the highest Crimes per 100K People. Here we are confronted with surprising data from the North East region, yet again. King's County has an absurdly large Crime per 100K People value. Sitting at around \~300, this value is about triple the amount of any of the top counties in the West region.
+
+```{r, echo=FALSE}
+image2_url <- image1_url <- "https://www.dot.ny.gov/regional-offices/region11/general-info/highways-in-kings-county/kingsmap.jpg"
+knitr::include_graphics(image2_url)
+```
+
+<p>
+
+<span style="font-size: 12px; font-style: italic;">Image courtesy of [dot.ny.gov](https://www.dot.ny.gov/regional-offices/region11/general-info/highways-in-kings-county)
+
+<p>
+
+</span>
+
+```{r}
+cr1 <- crime_data %>%
+  group_by(Region) %>%
+  slice_max(order_by = CrimesPer100K, n = 4) %>%
+  dplyr::select(Region, County, CrimesPer100K)
+
+cr1 %>%
+  kable(col.names = c("Region", "County", "Crimes Per 100K")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = TRUE
+  ) %>%
+  row_spec(0, background = 'lightblue') %>%
+  row_spec(5, background = 'gold') %>%
+  column_spec(1, background = 'grey', color = 'white')
+
+cr1 %>%
+  ggplot(mapping = aes(x = fct_reorder(.f = County, .x = CrimesPer100K, .fun = max), y = CrimesPer100K)) +
+  geom_col(aes(color = Region)) +
+  facet_wrap(~Region) +
+  coord_flip() +
+  labs(
+    x = "Crimes Per 100K People",
+    y = "",
+    subtitle = "County",
+    title = "Visualization of 4 Counties with Highest Crimes per 100K Per Region"
+  ) +
+  theme(
+          plot.title = element_text(hjust = 0.5)
+  )
+```
+
+It was a question of interest to look at age concentration as a correlative factor in explaining crime rates. Regarding age, the collected data was split into two variables, the first being proportion of population between the ages of 18-34 and proportion of ages 65+. The South region exhibited interesting results. While it maintained average age group results as the other regions, the Total Crimes Per 100K value was almost double the amount of the second highest region, North Central. Even though the South region population hovers slightly above 50 million, regions like the West are similarly situated and exhume a Total Crime Per 100K value of less than half, indicative that there are other factors involved in why the crime rates are as high as they are.
+
+```{r}
+cr2 <- crime_data %>%
+  dplyr::select(Region, Pop18.34, Pop65., CrimesPer100K, Pop100K) %>%
+  group_by(Region) %>%
+  summarise(Avg_PopAges18.34 = mean(Pop18.34),
+            Avg_PopAges65 = mean(Pop65.),
+            TotalCrimesPer100K = sum(CrimesPer100K),
+            TotalPop100K = sum(Pop100K)) %>%
+  arrange(desc(TotalCrimesPer100K))
+
+cr2 %>%
+  kable(col.names = c("Region", "Avg. Pop Ages 18-34", "Avg Pop Ages 65+", "Total Crimes Per 100K", "Total Population (in 100K)")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = FALSE
+  ) %>%
+  row_spec(0, background = 'lightblue') %>%
+  row_spec(1, background = 'gold')
+```
+
+From a research perspective, it was of interest to fit a model containing a handful of potentially useful predictors. For this simple analysis, it was imperative to include variables analyzed previously in this article such as Population in 100K, Poverty Rate, and Region. In addition to these variables others were included that were individually scrutinized for a relationship with crime. The final model analyzed was: $\widehat{CrimesPer100K} = Bachelors + Poverty + IncKPerCapita + Pop100K + Region$
+
+```{r}
+# make sure to remove output from this!
+crime_model_1 <- crime_data %>%
+  lm(CrimesPer100K ~ Bachelors + Poverty + IncKperCapita + Pop100K + Region, data = .)
+```
+
+When analyzing the Residuals \~ Fitted plot for the crime model, it is evident that there is a decent amount of homoscedasticity signaling that the linear assumption of equal variance is met. However, as an extra precaution a Breusch-Pagan test was implemented to further conclude homoscedasticity.
+
+```{r}
+crime_model_1 %>%
+  augment() %>%
+  ggplot(aes(x = .resid, y = .fitted)) +
+  geom_point() +
+  labs(
+    x = "Residuals",
+    y = "",
+    subtitle = "Fitted Values",
+    title = "Residuals v. Fitted Values for Crime Rate Model"
+  )
+
+```
+
+The Breusch-Pagan test resulted in a p-value of $7.015e^{-8}$, confirming, to a large degree, that in fact the model's errors are indeed homoscedastic.
+
+```{r, eval=FALSE}
+bptest(crime_model_1)
+```
+
+Even though the model exhibited linear behavior, a theoretical question was raised on what "hypothetical" y-axis transformation could potentially be used to help the data "fit" better. A Box-Cox procedure was implemented to get a hypothetical y-axis transformation value. This value, denoted by $\lambda$ ended up being \~0.4, indicating that transforming the response variable, CrimesPer100K, would optimize the linear behavior of the data.
+
+```{r}
+crime_data %>%
+boxcox(CrimesPer100K~Bachelors+Poverty+Region+IncKperCapita+Pop100K, data= ., lambda=seq(0,.5,by=0.1))
+```
+
+# [Section 2: California-Specific Analysis]{style="font-size: 1em;"}
+
+In this section of the article we will look at regional statistics comparing specific states and their crime relationship with San Luis Obispo. Along with comparing counties in California against San Luis Obispo.
+
+```{r}
+make_state <- function(str) {
+  State = str_extract(str, "\\, [A-Z]{2}") %>%
+    str_replace_all("\\, ", "")
+return(State)
+}
+
+crime_data <- crime_data %>%
+  mutate(State = make_state(County))
+```
+
+To begin, lets compare compare crime statistics among California, New York, Georgia, and Missouri. (Representative of each region)
+
+```{r}
+sec2q1 <- c("CA","NY","GA","MO")
+
+sec2.1 <- crime_data %>%
+  filter(State %in% sec2q1) %>%
+  group_by(State) %>%
+  summarise(TotalPop = sum(Pop100K),
+            AvgCrime = mean(CrimesPer100K),
+            AvgUnemp = mean(Unemploy),
+            AvgPoverty = mean(Poverty))
+sec2.1 %>%
+  kable(col.names = c("State","Total Population", "Average Crime per 100K People", "Average Unemployment Rate", "Average Poverty Rate")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = FALSE
+  ) %>%
+  row_spec(0, background = 'lightblue')
+
+sec2.1 %>%
+  ggplot(mapping = aes(x = TotalPop, y = AvgCrime, color = State)) +
+  geom_point(size = 5, shape = 10) +
+  labs(
+    x = "Total Population",
+    y = "",
+    subtitle = "Average Crime per 100K People",
+    title = "Visualization of Average Crime per 100K People vs. Total State Population"
+  ) +
+  theme(
+    plot.background = element_rect(fill = "grey"),
+    plot.title = element_text(color = "darkred", face = "bold", size = 13, hjust = 0.5)
+  )
+```
+
+When looking at the plot above, it was surprising to see that Georgia (GA) had an unusually high Average Crime per 100K for such a small total population, compared to California (CA) which has a large total population and an average "Average Crime per 100K" value. One reason for this could be the fact that Georgia has a select "county" with unusually high volumes of crime that statistically skews \[is an outlier\] the overall average for the state. California, on the other hand, has more counties with collectively similar crime rate values that help to dampen any outliers.
+
+Now, lets explore the regional (statewide) statistics on crime rates for California and compare it to San Luis Obispo. As we can see, initially, San Luis Obispo ranks last in the list of California counties in terms of crime rate. In theory, this makes sense as the population of San Luis Obispo is small.
+
+```{r}
+sec2.2p1 <- crime_data %>%
+  filter(State == "CA") %>%
+  dplyr::select(County, Pop100K, CrimesPer100K, IncKperCapita, Poverty) %>%
+  ggplot(mapping = aes(x = fct_reorder(.f = County, .x = CrimesPer100K, .fun = max), y = CrimesPer100K)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "Crimes Per 100K People",
+    y = "",
+    subtitle = "California County",
+    title = "Crimes per 100K People in California Counties"
+  ) +
+  theme(
+    legend.key.size = unit(0.3, "cm")
+  )
+sec2.2p1
+```
+
+Knowing this, how does the ratio of Population (in 100K) to Crimes per 100K People compare between San Luis Obispo and the least populated county in the data set? The results were as follows:
+
+Calculating Ratio for San Luis Obispo: $\frac{2.17162}{37.313} = 5.82\%$
+
+Calculating Ratio for King's County (smallest county by population in data set): $\frac{1.01469}{43.846} = 2.31\%$
+
+```{r}
+slo <- crime_data %>%
+  filter(County == "San Luis Obispo, CA") %>%
+  dplyr::select(County, Pop100K, CrimesPer100K, IncKperCapita, Poverty)
+
+kings <- crime_data %>%
+  filter(State == "CA", County == "Kings, CA") %>%
+  dplyr::select(County, Pop100K, CrimesPer100K, IncKperCapita, Poverty)
+
+slo %>%
+  kable(col.names = c("County", "Population (in 100K)", "Crimes Per 100K People", "Income Per Capita (in thousands)", "Poverty Percent")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = FALSE
+  ) %>%
+  row_spec(0, background = 'lightblue')
+
+kings %>%
+  kable(col.names = c("County", "Population (in 100K)", "Crimes Per 100K People", "Income Per Capita (in thousands)", "Poverty Percent")) %>%
+  kable_styling(
+    font_size = 12,
+    position = 'left',
+    full_width = FALSE
+  ) %>%
+  row_spec(0, background = 'goldenrod')
+```
+
+To briefly interpret the data above, in San Luis Obispo County, out of every 100K people statistically, you have about a $5.82\%$ chance of being involved in some type of a crime. Versus Kings county of $2.31\%$. This is significant factoring in the population difference of +115,693 for San Luis Obispo county.
+
+```{r}
+image3_url <- "https://www.slocounty.ca.gov/getmedia/5d5e15a9-6c26-46d8-997e-670526380711/SanLuisObispo.aspx"
+knitr::include_graphics(image3_url)
+```
+
+<p>
+
+<span style="font-size: 12px; font-style: italic;">Image courtesy of [slocounty.ca.gov](https://www.slocounty.ca.gov/Departments/County-Administrative-Officer/About-the-County.aspx)
+
+<p>
+
+</span>
+
+It was advantageous to test, visually, the hypothesis that there is a linear relationship between Income Per Capita and Crime Rates. The scatter plot below displays random scatter, indicating that there is no linear relationship between these variables, in fact, quite possibly no glaringly obvious relationship at all. This contradicted the initial assumption that there would be a direct linear relationship. It is important to note that just because the plot depicts 'random' scatter, that is *not* a possibility of a relationship between the variables. For that, deeper statistical testing would be necessary.
+
+```{r}
+sec2.2p2 <- crime_data %>%
+  filter(State == "CA") %>%
+  dplyr::select(County, Pop100K, CrimesPer100K, IncKperCapita, Poverty) %>%
+  ggplot(mapping = aes(x = IncKperCapita, y = CrimesPer100K)) +
+  geom_point() +
+  coord_flip() +
+  labs(
+    x = "Crimes Per 100K People",
+    y = "",
+    subtitle = "Income Per Capita (in thousands)",
+    title = "Crimes per 100K People in California Counties"
+  ) +
+  theme(
+    legend.key.size = unit(0.3, "cm")
+  )
+sec2.2p2
+```
+
+# [Section 3: Conclusions]{style="font-size: 1em;"}
+
+This article just scrapes the very surface of crime rate analysis touching upon a small selection of predictive variables. However, it still provides meaningful analysis worth describing. While the results of San Luis Obispo's might come as a shock the chances being involved in a crime both actively and passively are quite slim. There is a realistically un-quantifiable amount of possible influences on Crime Rate

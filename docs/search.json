@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "Hello! So nice to meet you 😁 Do you love Statistics, Data Analytics, and Machine Learning? If so, I’m glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and data automation; especially interested in working within consulting, product, and supply chain areas. On the side, I’m passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.\n\n\nCalifornia Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Aug 2020 - May 2022\nFeel free to connect!"
+    "text": "Hello! So nice to meet you 😁 Do you love Statistics, Data Analytics, and Machine Learning? If so, I’m glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and data automation; especially interested in working within consulting, product, and supply chain areas. On the side, I’m passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.\n\n\nCalifornia Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Aug 2020 - May 2022\n\n\n\nProfessional:\n\nBDO USA P.C. (San Jose)| IS Assurance Intern | Summer 2023\nCognoa, Inc. (Palo Alto) | Data Science Intern | Summer 2019\n\nEducational:\n\nCalifornia Polytechnic State University (San Luis Obispo) | Instructional Student Assistant for STAT 251 (Statistical Inference for Management I) | Fall Quarter 2023\nCalifornia Polytechnic State University (San Luis Obispo) | In-Class Learning Assistant for STAT 324 (Applied Regression Analysis) | Winter Quarter 2024\n\n\n\n\nIn my free time I love nothing more than a good hike, good cup of coffee, or a good conversation with friends! Some recent hikes I’ve enjoyed are:\nAvila Ridge Trail\nCerro Cabrillo via Quarry Trail\n\n\n\nA beautiful day at Morro Bay.\nFeel free to connect!"
   },
   {
     "objectID": "index.html#education",
@@ -12,6 +12,20 @@
     "title": "About Me",
     "section": "",
     "text": "California Polytechnic State University | San Luis Obispo, CA BS in Business Administration Information Systems | Sept 2022 - June 2024 | Minors in: Statistics and Mathematics\nWest Valley College | Saratoga, CA | AA in Mathematics, AA in Economics, AA in Business Administration | Aug 2020 - May 2022"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "About Me",
+    "section": "",
+    "text": "Professional:\n\nBDO USA P.C. (San Jose)| IS Assurance Intern | Summer 2023\nCognoa, Inc. (Palo Alto) | Data Science Intern | Summer 2019\n\nEducational:\n\nCalifornia Polytechnic State University (San Luis Obispo) | Instructional Student Assistant for STAT 251 (Statistical Inference for Management I) | Fall Quarter 2023\nCalifornia Polytechnic State University (San Luis Obispo) | In-Class Learning Assistant for STAT 324 (Applied Regression Analysis) | Winter Quarter 2024"
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "About Me",
+    "section": "",
+    "text": "In my free time I love nothing more than a good hike, good cup of coffee, or a good conversation with friends! Some recent hikes I’ve enjoyed are:\nAvila Ridge Trail\nCerro Cabrillo via Quarry Trail\n\n\n\nA beautiful day at Morro Bay."
   },
   {
     "objectID": "projd1_backup.html",
@@ -25,27 +39,27 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Check out my latest project for STAT331 at CalPoly! Click Here!"
+    "text": "Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.\nClick Here\nView our Shiny App for further visualizations.\nShiny App"
   },
   {
     "objectID": "projects.html#project-1",
     "href": "projects.html#project-1",
     "title": "Projects",
     "section": "",
-    "text": "Check out my latest project for STAT331 at CalPoly! Click Here!"
+    "text": "Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.\nClick Here\nView our Shiny App for further visualizations.\nShiny App"
   },
   {
     "objectID": "projects.html#project-2",
     "href": "projects.html#project-2",
     "title": "Projects",
     "section": "Project 2",
-    "text": "Project 2"
+    "text": "Project 2\nComing Soon"
   },
   {
     "objectID": "projects.html#project-3",
     "href": "projects.html#project-3",
     "title": "Projects",
     "section": "Project 3",
-    "text": "Project 3"
+    "text": "Project 3\nComing Soon"
   }
 ]

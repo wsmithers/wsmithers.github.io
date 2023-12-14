@@ -9,7 +9,6 @@ website:
       - href: index.qmd
         text: Home
       - projects.qmd
-      - resume.qmd
     tools:
       - icon: github
         href: https://github.com/wsmithers

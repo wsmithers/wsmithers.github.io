@@ -4,9 +4,18 @@ title: "Projects"
 
 ## Project 1
 
-Check out my latest project for STAT331 at CalPoly!
-[Click Here!](https://wsmithers.github.io/projd1_backup.html)
+Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.
+
+[Click Here](https://wsmithers.github.io/projd1_backup.html)
+
+View our Shiny App for further visualizations.
+
+[Shiny App](https://celest.shinyapps.io/crime_rate_shiny_app/)
 
 ## Project 2
 
+*Coming Soon*
+
 ## Project 3
+
+*Coming Soon*

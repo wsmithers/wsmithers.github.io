@@ -1,6 +1,6 @@
 ---
 title: "Project Deliverable - Crime Rates"
-author: "William Smithers"
+author: "William Smithers, Celeste Illescas, Anabel Caesar"
 format: 
   html:
     code-fold: false
@@ -35,7 +35,7 @@ crime_data$County <- str_replace_all(crime_data$County, "_", " ")
 
 [A Statistical Analysis on United States Crime Rates: How does San Luis Obispo Fare?]{style="font-size: 2.5em;"}
 
-[By: William J. Smithers (2023)]{.underline}
+[By: William J. Smithers, Celeste Illescas, Anabel Caesar (2023)]{.underline}
 
 # **Abstract**
 

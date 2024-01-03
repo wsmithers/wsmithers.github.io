@@ -1,0 +1,26 @@
+---
+title: "Courses"
+about:
+  template: jolla
+---
+
+::: callout-tip
+## About Course Pages
+
+Please note that course pages will be updated frequently reflecting updated assignments and supplemental resources, however, it is still the responsibility of the student to reference the appropriate Canvas syllabus for official due dates, changes, and/or modifications.
+:::
+
+
+::: {.callout-note icon=false}
+
+## STAT 324: Applied Regression Analysis (W24)(Dekhtyar)
+
+**Announcements:**
+-
+
+**Upcoming Due Dates:**
+-
+
+[Site Link](https://wsmithers.github.io/stat324w24.html)
+
+:::

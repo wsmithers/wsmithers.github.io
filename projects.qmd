@@ -1,21 +1,19 @@
 ---
 title: "Projects"
+layout: blog
 ---
 
-## Project 1
+# My Projects
 
-Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.
+Welcome to my projects page! Here, you will find a collection of my recent statistical work.
 
-[Click Here](https://wsmithers.github.io/projd1_backup.html)
+## Project 1: Analysis of US Crime Rates
 
-View our Shiny App for further visualizations.
+**Date:** 2023-11-15
 
-[Shiny App](https://celest.shinyapps.io/crime_rate_shiny_app/)
+**Description:** Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.
 
-## Project 2
+**Tags:** R, Data Analysis, Crime
 
-*Coming Soon*
-
-## Project 3
-
-*Coming Soon*
+**Link:** [Read more](https://wsmithers.github.io/projd1_backup.html)
+**Shiny App:** [Launch App](https://celest.shinyapps.io/crime_rate_shiny_app/)

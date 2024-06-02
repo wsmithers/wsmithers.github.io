@@ -4,6 +4,10 @@ image: img/IMG_1116.jpg
 about:
   id: me
   template: solana
+  links: 
+    - icon: file-earmark-pdf-fill
+      text: Resume
+      href: ./docs/github_resume_june.pdf
   image-width: 10em
   image-shape: rectangle
 ---
@@ -21,6 +25,8 @@ Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and 
 
 ***Professional:***
 
+-   **Cal Poly - Low Income Taxpayer Clinic** (San Luis Obispo) \| Legal Intern & Technology Director \| Spring 2024 - Current 
+
 -   **BDO USA P.C.** (San Jose)\| IS Assurance Intern \| Summer 2023
 
 -   **Cognoa, Inc.** (Palo Alto) \| Data Science Intern \| Summer 2019
@@ -29,7 +35,7 @@ Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and 
 
 -   **California Polytechnic State University** (San Luis Obispo) \| Instructional Student Assistant for STAT 251 (Statistical Inference for Management I) \| Fall Quarter 2023
 
--   **California Polytechnic State University** (San Luis Obispo) \| In-Class Learning Assistant for STAT 324 (Applied Regression Analysis) \| Winter Quarter 2024
+-   **California Polytechnic State University** (San Luis Obispo) \| In-Class Learning Assistant for STAT 324 (Applied Regression Analysis), STAT 252 (Statistical Inference for Mgmt II), STAT 251 (Statistical Inference for Mgmt I) \| Winter Quarter 2024
 
 ## *Interests* 🚵‍♂️ ☕
 
@@ -46,4 +52,6 @@ Feel free to connect:
 
 -   Email: william.smithers.4\@gmail.com
 
--   Phone: (408) 896-7697
+-   University Email: wjsmithe\@calpoly.edu
+
+-   Cell Phone: (408) 896-7697

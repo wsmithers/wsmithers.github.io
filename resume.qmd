@@ -8,6 +8,6 @@ date: "2024-06-01"
 
 You can download my resume by clicking the link below:
 
-[Download my resume](./docs/ws_resume_github.pdf)
+[Download my resume](docs/ws_resume_github.pdf)
 
 If the link above doesn't work, you can copy and paste the following URL into your browser:

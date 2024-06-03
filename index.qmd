@@ -4,10 +4,6 @@ image: img/IMG_1116.jpg
 about:
   id: me
   template: solana
-  links: 
-    - icon: file-earmark-pdf-fill
-      text: Resume
-      href: ./docs/github_resume_june.pdf
   image-width: 10em
   image-shape: rectangle
 ---

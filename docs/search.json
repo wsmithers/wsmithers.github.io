@@ -21,11 +21,11 @@
     "text": "Date: 2023-11-15\nDescription: Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.\nTags: R, Data Analysis, Crime\nLink: Read more Shiny App: Launch App"
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
+    "objectID": "resume/index.html",
+    "href": "resume/index.html",
     "title": "Resume",
     "section": "",
-    "text": "My Resume\nYou can download my resume by clicking the link below:\nDownload my resume\nIf the link above doesn’t work, you can copy and paste the following URL into your browser:"
+    "text": "Download current Resume"
   },
   {
     "objectID": "courses.html",
@@ -40,6 +40,13 @@
     "title": "Courses",
     "section": "Upcoming Due Dates:",
     "text": "Upcoming Due Dates:\nSite Link"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "My Resume\nYou can download my resume by clicking the link below:\nDownload my resume\nIf the link above doesn’t work, you can copy and paste the following URL into your browser:"
   },
   {
     "objectID": "projd1_backup.html",

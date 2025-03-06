@@ -9,7 +9,7 @@ about:
 ---
 
 ::: {#hero-heading}
-Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and *Machine Learning*? If so, I'm glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and data automation; especially interested in working within consulting, product, and supply chain areas. On the side, I'm passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.
+Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and *Tax & Business Law*? If so, I'm glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and strategic management; especially interested in working within consulting, product, and supply chain areas. On the side, I'm passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.
 
 ## *Education* 🏫 🔢
 
@@ -21,7 +21,9 @@ Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and 
 
 ***Professional:***
 
--   **Cal Poly - Low Income Taxpayer Clinic** (San Luis Obispo) \| Legal Intern & Technology Director \| Spring 2024 - Current 
+-   **Cal Poly - Low Income Taxpayer Clinic** (San Luis Obispo) 
+   Legal Researcher \| January 2025 - Current <br>
+   Legal Intern & Technology Director \| May 2024 - January 2025 
 
 -   **BDO USA P.C.** (San Jose)\| IS Assurance Intern \| Summer 2023
 
@@ -33,7 +35,7 @@ Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and 
 
 ## *Interests* 🚵‍♂️ ☕
 
-In my free time I love nothing more than a good hike, good cup of coffee, or a good conversation with friends! Some recent hikes I've enjoyed are:
+In my free time I love nothing more than a good hike, good cup of coffee, or a good walk on the beach! Some recent hikes I've enjoyed are:
 
 [Avila Ridge Trail](https://www.alltrails.com/explore/recording/avila-ridge-trail--2)
 
@@ -42,7 +44,7 @@ In my free time I love nothing more than a good hike, good cup of coffee, or a g
 ![A beautiful day at Morro Bay.](img/morro_bay.jpg)
 :::
 
-Feel free to connect:
+Let's Connect:
 
 -   Email: william.smithers.4\@gmail.com
 

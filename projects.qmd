@@ -3,18 +3,18 @@ title: "Projects"
 layout: blog
 ---
 
-# My Projects
 
-Welcome to my projects page! Here, you will find a collection of my recent legal and statistical research.
+Welcome to my projects page! Here, you will find a collection of my recent legal and statistical research. *Please note that all material posted is solely owned by me---duplication or use without express permission is illegal under US copyright law.*
 
-## Project 2: *[IN PROGRESS]* Proposal to Reform the California Franchise Tax Board’s Filing Enforcement Procedures for Individuals with Occupational Licenses under Revenue and Taxation Code (RTC) § 19087
+<small>If you would like to propose a research project, or would like to work with me on a future engagement, <a href="mailto:william.smithers.4@gmail.com">let's connect</a>!</small>
+
+## Project 2: *\[IN PROGRESS\]* Proposal to Reform the California Franchise Tax Board's Filing Enforcement Procedures for Individuals with Occupational Licenses under Revenue and Taxation Code (RTC) § 19087
 
 **Date:** January 2025
 
-**Description:** My research critically examines the California Franchise Tax Board’s (FTB) practice of assessing income against individuals holding professional licenses, even in cases where no earnings were reported. Under California Revenue and Taxation Code § 19087, the FTB presumes income based solely on licensure status, often leading to aggressive tax enforcement actions such as wage garnishments and bank levies. This study explores the statutory origins of this policy, its due process and fairness implications, and the broader economic consequences for affected professionals. Additionally, I conduct a comparative analysis of similar statutes in five other states, highlighting key differences in tax enforcement strategies. By addressing these issues, my work aims to contribute to legal scholarship on occupational taxation and advocate for policy reforms that ensure equitable treatment of license holders under the law.
+**Description:** My research critically examines the California Franchise Tax Board's (FTB) practice of assessing income against individuals holding professional licenses, even in cases where no earnings were reported. Under California Revenue and Taxation Code § 19087, the FTB presumes income based solely on licensure status, often leading to aggressive tax enforcement actions such as wage garnishments and bank levies. This study explores the statutory origins of this policy, its due process and fairness implications, and the broader economic consequences for affected professionals. Additionally, I conduct a comparative analysis of similar statutes in five other states, highlighting key differences in tax enforcement strategies. By addressing these issues, my work aims to contribute to legal scholarship on occupational taxation and advocate for policy reforms that ensure equitable treatment of license holders under the law.
 
 **Tags:** Tax, Law, Business Law, California, FTB
-
 
 ## Project 1: Analysis of US Crime Rates
 
@@ -24,5 +24,4 @@ Welcome to my projects page! Here, you will find a collection of my recent legal
 
 **Tags:** R, Data Analysis, Crime
 
-**Link:** [Read more](https://wsmithers.github.io/projd1_backup.html)
-**Shiny App:** [Launch App](https://celest.shinyapps.io/crime_rate_shiny_app/)
+**Link:** [Read more](https://wsmithers.github.io/projd1_backup.html) **Shiny App:** [Launch App](https://celest.shinyapps.io/crime_rate_shiny_app/)

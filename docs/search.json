@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Welcome to my projects page! Here, you will find a collection of my recent statistical work.\n\n\nDate: 2023-11-15\nDescription: Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.\nTags: R, Data Analysis, Crime\nLink: Read more Shiny App: Launch App"
+    "text": "Welcome to my projects page! Here, you will find a collection of my recent legal and statistical research.\n\n\nDate: January 2025\nDescription: My research critically examines the California Franchise Tax Board’s (FTB) practice of assessing income against individuals holding professional licenses, even in cases where no earnings were reported. Under California Revenue and Taxation Code § 19087, the FTB presumes income based solely on licensure status, often leading to aggressive tax enforcement actions such as wage garnishments and bank levies. This study explores the statutory origins of this policy, its due process and fairness implications, and the broader economic consequences for affected professionals. Additionally, I conduct a comparative analysis of similar statutes in five other states, highlighting key differences in tax enforcement strategies. By addressing these issues, my work aims to contribute to legal scholarship on occupational taxation and advocate for policy reforms that ensure equitable treatment of license holders under the law.\nTags: Tax, Law, Business Law, California, FTB\n\n\n\nDate: 2023-11-15\nDescription: Check out my latest project for STAT331 at CalPoly! In this project, my collegues and I statistically analyze US crime rates on the national, regional, and municipal level. We connect these findings to the crime rates in San Luis Obispo.\nTags: R, Data Analysis, Crime\nLink: Read more Shiny App: Launch App"
   },
   {
     "objectID": "projects.html#project-1-analysis-of-us-crime-rates",
@@ -75,5 +75,12 @@
     "title": "About Me",
     "section": "",
     "text": "In my free time I love nothing more than a good hike, good cup of coffee, or a good walk on the beach! Some recent hikes I’ve enjoyed are:\nAvila Ridge Trail\nCerro Cabrillo via Quarry Trail\n\n\n\nA beautiful day at Morro Bay."
+  },
+  {
+    "objectID": "projects.html#project-2-in-progress-proposal-to-reform-the-california-franchise-tax-boards-filing-enforcement-procedures-for-individuals-with-occupational-licenses-under-revenue-and-taxation-code-rtc-19087",
+    "href": "projects.html#project-2-in-progress-proposal-to-reform-the-california-franchise-tax-boards-filing-enforcement-procedures-for-individuals-with-occupational-licenses-under-revenue-and-taxation-code-rtc-19087",
+    "title": "Projects",
+    "section": "",
+    "text": "Date: January 2025\nDescription: My research critically examines the California Franchise Tax Board’s (FTB) practice of assessing income against individuals holding professional licenses, even in cases where no earnings were reported. Under California Revenue and Taxation Code § 19087, the FTB presumes income based solely on licensure status, often leading to aggressive tax enforcement actions such as wage garnishments and bank levies. This study explores the statutory origins of this policy, its due process and fairness implications, and the broader economic consequences for affected professionals. Additionally, I conduct a comparative analysis of similar statutes in five other states, highlighting key differences in tax enforcement strategies. By addressing these issues, my work aims to contribute to legal scholarship on occupational taxation and advocate for policy reforms that ensure equitable treatment of license holders under the law.\nTags: Tax, Law, Business Law, California, FTB"
   }
 ]

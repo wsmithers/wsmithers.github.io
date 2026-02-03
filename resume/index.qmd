@@ -35,6 +35,7 @@ cv:
 }
 ```
 
+
 ```{=html}
 <p class="text-center">
   <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">

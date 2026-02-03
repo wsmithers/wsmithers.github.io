@@ -4,7 +4,7 @@ layout: blog
 ---
 
 
-Welcome to my projects page! Here, you will find a collection of my recent legal and statistical research. *Please note that all material posted is solely owned by me---duplication or use without express permission is illegal under US copyright law.*
+Welcome to my projects page! Here, you will find a collection of my recent legal and statistical work. *Please note that all material posted is solely owned by me---duplication or use without express permission is illegal under US copyright law.*
 
 <small>If you would like to propose a research project, or would like to work with me on a future engagement, <a href="mailto:william.smithers.4@gmail.com">let's connect</a>!</small>
 

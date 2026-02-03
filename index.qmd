@@ -9,11 +9,11 @@ about:
 ---
 
 ::: {#hero-heading}
-Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and *Tax & Business Law*? If so, I'm glad we met. Growing up in the Bay Area exposed me to many of these disciplines inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop powerful solutions to complex problems. My goal is to pursue professional employment in data analytics, database programming/development, and strategic management; especially interested in working within consulting, product, and supply chain areas. On the side, I'm passionate about teaching statistical concepts and theory, especially within the sub field of regression analysis.
+Hello! So nice to meet you 😁 Growing up in the Bay Area exposed me to many disciplines such as *Statistics*, *Data Analytics*, and *Tax & Business Law*, inspiring me to study these topics in higher education. I am looking to use my background in information systems, statistics, and leadership to develop solutions to ambiguous business problems. My goal is to pursue professional employment in business analytics, operations, and strategic management; especially interested in working within consulting, product, and supply chain areas. On the side, I'm passionate about cooking and exploring new hiking trails in the greater SF Bay Area. 
 
 ## *Education* 🏫 🔢
 
-**California Polytechnic State University** \| San Luis Obispo, CA BS in Business Administration Information Systems \| Sept 2022 - Dec 2024 \| ***Minors in: Statistics and Mathematics***
+**California Polytechnic State University** \| San Luis Obispo, CA BS in Business Administration Information Systems \| Sept 2022 - Dec 2024 \| ***Minor in Statistics **
 
 **West Valley College** \| Saratoga, CA \| AA in Mathematics, AA in Economics, AS-T in Business Administration \| Aug 2020 - May 2022
 
@@ -22,8 +22,8 @@ Hello! So nice to meet you 😁 Do you love *Statistics*, *Data Analytics*, and 
 ***Professional:***
 
 -   **Cal Poly - Low Income Taxpayer Clinic** (San Luis Obispo) 
-   Legal Researcher \| January 2025 - Current <br>
-   Legal Intern & Technology Director \| May 2024 - January 2025 
+   Legal Researcher \| January 2025 - June 2025 <br>
+   Legal Assistant \| May 2024 - July 2025 
 
 -   **BDO USA P.C.** (San Jose)\| IS Assurance Intern \| Summer 2023
 
